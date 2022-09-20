@@ -1,0 +1,15 @@
+mysql> create table course(Courseno int(10),Coursedesc char(20),coursetype char(1),semno int(10),hallno int(10),facno int(10));
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> desc course;
++------------+----------+------+-----+---------+-------+
+| Field      | Type     | Null | Key | Default | Extra |
++------------+----------+------+-----+---------+-------+
+| Courseno   | int(10)  | YES  |     | NULL 
+Coursedesc | char(20) | YES  |     | NULL
+ coursetype | char(1)  | YES  |     | NULL    |       |
+| semno      | int(10)  | YES  |     | NULL    |       |
+| hallno     | int(10)  | YES  |     | NULL    |       |
+| facno      | int(10)  | YES  |     | NULL    |       |
++------------+----------+------+-----+---------+-------+
+6 rows in set (0.02 sec)
