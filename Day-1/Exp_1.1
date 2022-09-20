@@ -1,0 +1,14 @@
+mysql> create table student(Rengo int(10),Name char(20),gender char(1),Dob int(10),MobileNo int(10),city char(10) );
+ERROR 1050 (42S01): Table 'student' already exists
+mysql> desc student;
++----------+----------+------+-----+---------+-------+
+| Field    | Type     | Null | Key | Default | Extra |
++----------+----------+------+-----+---------+-------+
+| Regno    | int(10)  | YES  |     | NULL    |       |
+| Name     | char(20) | YES  |     | NULL    |       |
+| gender   | char(1)  | YES  |     | NULL    |       |
+| Dob      | int(10)  | YES  |     | NULL    |       |
+| MobileNo | int(10)  | YES  |     | NULL    |       |
+| City     | char(10) | YES  |     | NULL    |       |
++----------+----------+------+-----+---------+-------+
+6 rows in set (0.02 sec)
