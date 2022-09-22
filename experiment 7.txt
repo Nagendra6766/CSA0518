@@ -1,0 +1,54 @@
+
+experiment 7:
+
+SUB QUERY AND CORELATED SUB-QUERY:
+
+1).
+
++---------+------+-------+------+------+
+| name    | code | marks | sem  | regs |
++---------+------+-------+------+------+
+| nagendra| c002 |    78 | a    |   12 |
+| juliet  | c021 |    99 | b    |   12 |
+| naveen  | c003 |    89 | c    |   24 |
+| danush  | c005 |    74 | d    |   35 |
+| surya   | c025 |    84 | e    |   27 |
++---------+------+-------+------+------+
+
+
+a).
+
+
+mysql> select*from fi where marks=(select max(marks) from fi);
++------+------+-------+------+------+
+| name | code | marks | sem  | regs |
++------+------+-------+------+------+
+| juliet| c021 |    99 | b    |   12 |
++------+------+-------+------+------+
+
+2).
+
++-----------+--------+--------+-------+
+| name      | course | assign | score |
++-----------+--------+--------+-------+
+| nagendra  | python |      1 |    78 |
+| tomcruise | java   |      0 |    85 |
+| nagendra  | c      |      3 |    65 |
+| sandya    | html   |      1 |    79 |
+| hobbs     | sql    |      3 |    67 |
++-----------+--------+--------+-------+
+
+a).
+mysql> select*from sam where assign>1;
++-------+--------+--------+-------+
+| name  | course | assign | score |
++-------+--------+--------+-------+
+| nagend| c      |      3 |    65 |
+| hobbs | sql    |      3 |    67 |
++-------+--------+--------+-------+
+
+
+
+
+
+
